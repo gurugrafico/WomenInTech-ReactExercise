@@ -29,6 +29,7 @@
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
       crossorigin
     ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   </head>
   <body>
     <h1>Women in tech</h1>
@@ -36,7 +37,7 @@
     <script>
       const $app = document.getElementById("app");
 
-      const Avatar = params => {
+      /* const Avatar = params => {
         const src = `https://randomuser.me/api/portraits/women/${
           params.id
         }.jpg`;
@@ -55,7 +56,7 @@
         img.addEventListener("click", () => {
           img.classList.toggle("disabled");
         });
-      });
+      }); */
     </script>
   </body>
 </html>
