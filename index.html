@@ -41,7 +41,9 @@
       $app.innerHTML += Avatar({ id: 6, name: "Manuela" });
 
       $app.querySelectorAll("img").forEach(img => {
-        img;
+        img.addEventListener("click", () => {
+          img.classList.toggle("disable");
+        });
       });
     </script>
   </body>
