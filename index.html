@@ -17,6 +17,9 @@
         border-radius: 50%;
         width: 100px;
       }
+      img.disabled {
+        opacity: 0.3;
+      }
     </style>
   </head>
   <body>
@@ -42,7 +45,7 @@
 
       $app.querySelectorAll("img").forEach(img => {
         img.addEventListener("click", () => {
-          img.classList.toggle("disable");
+          img.classList.toggle("disabled");
         });
       });
     </script>
