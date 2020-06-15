@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Women in tech</title>
+    <style>
+      picture {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100px;
+      }
+      img {
+        box-shadow: 0 0 15px #999;
+        border-radius: 50%;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Women in tech</h1>
+    <div id="app"></div>
+    <script>
+      const $app = document.getElementById("app");
+
+      const Avatar = params => {
+        const src = `https://randomuser.me/api/portraits/women/${
+          params.id
+        }.jpg`;
+
+        return `<picture>
+        <img src="${src}" />
+        <h3>${params.name}</h3>
+        </picture>
+        `;
+      };
+
+      $app.innerHTML += Avatar({ id: 5, name: "Andrea" });
+      $app.innerHTML += Avatar({ id: 6, name: "Manuela" });
+
+      $app.querySelectorAll("img").forEach(img => {
+        img;
+      });
+    </script>
+  </body>
+</html>
